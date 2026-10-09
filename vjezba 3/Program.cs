@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -17,6 +18,8 @@ namespace vjezba_3
                 Console.WriteLine("1. Zadatak");
                 Console.WriteLine("2. Zadatak");
                 Console.WriteLine("3. Zadatak");
+                Console.WriteLine("4. Zadatak");
+                Console.WriteLine("5. Zadatak");
                 Console.WriteLine("0 Kraj");
 
                 Console.WriteLine("Unesite broj zadataka: ");
@@ -33,6 +36,12 @@ namespace vjezba_3
                         case "3":
                             Zad03();
                         break;
+                        case "4":
+                            Zad04();
+                        break;
+                        case "5":
+                            Zad05();
+                        break;
 
                     case "0":
                         break;
@@ -45,6 +54,14 @@ namespace vjezba_3
             while (izbor != "0");
 
             Console.ReadKey();
+        }
+        static int kvadrat(int a)
+        {
+            return a * a;
+        }
+        static double OpsegKruga(double r)
+        {
+            return 2*r*Math.PI;
         }
         static int Razlika(int a, int b)
         {
@@ -94,7 +111,24 @@ namespace vjezba_3
             Console.WriteLine($"Povrsina Pravokutnika je: {povrsina}");
             
         }
-        
+        static void Zad04()
+        {
+            Console.WriteLine("---------Zadatak 4------------");
+            Console.WriteLine("Unesi r kruga: ");
+            double r = double.Parse(Console.ReadLine());
+
+            double Opseg = OpsegKruga(r);
+            Console.WriteLine($"Opseg kruga je {Opseg}");
+        }
+        static void Zad05()
+        {
+            Console.WriteLine("----------Zadatak 5------------");
+            Console.WriteLine("Kvadrati brojeva od 1 do 10");
+            for (int i = 0; i <=10; i++)
+            {
+                Console.WriteLine($"Kvadrat broja {i} je: {kvadrat(i)}");
+            }
+        }
 
 
     }

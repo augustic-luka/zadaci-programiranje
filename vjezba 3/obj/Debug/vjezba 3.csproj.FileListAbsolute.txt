@@ -1,0 +1,8 @@
+D:\Luka augustic 2.d\vjezba 3\bin\Debug\vjezba 3.exe.config
+D:\Luka augustic 2.d\vjezba 3\bin\Debug\vjezba 3.exe
+D:\Luka augustic 2.d\vjezba 3\bin\Debug\vjezba 3.pdb
+D:\Luka augustic 2.d\vjezba 3\obj\Debug\vjezba 3.csproj.AssemblyReference.cache
+D:\Luka augustic 2.d\vjezba 3\obj\Debug\vjezba 3.csproj.CoreCompileInputs.cache
+D:\Luka augustic 2.d\vjezba 3\obj\Debug\vjezba 3.exe
+D:\Luka augustic 2.d\vjezba 3\obj\Debug\vjezba 3.pdb
+D:\Luka augustic 2.d\vjezba 3\obj\Debug\vjezba 3.exe.config

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,7 +46,14 @@ namespace vjezba_3
 
             Console.ReadKey();
         }
-
+        static int Razlika(int a, int b)
+        {
+            return a-b;
+        }
+        static int Zbroj(int a, int b)
+        {
+            return a+b;
+        }
         static double PovrsinaPravokutnika(double a, double b)
         {
             return a * b;
@@ -53,12 +61,27 @@ namespace vjezba_3
         static void Zad01()
         {
             Console.WriteLine("-------------Zadatak1---------------");
+            Console.WriteLine("Unesi prvi broj: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Unesi drugi broj: ");
+            int b = int.Parse(Console.ReadLine());
+
+            int rezultat = Zbroj(a, b);
+            Console.WriteLine($"Zbroj brojeva je:{rezultat}");
 
 
         }
         static void Zad02()
         {
-            Console.WriteLine("Zadatak 2");
+            Console.WriteLine("------------Zadatak 2--------------");
+            Console.WriteLine("Unesi prvi broj: ");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("UNei drugi broj: ");
+            int b = int.Parse(Console.ReadLine());
+
+            int rezultat= Razlika(a, b);
+            Console.WriteLine($"Razlika brojeva je: {rezultat}");
+
         }
         static void Zad03()
         {
@@ -71,6 +94,7 @@ namespace vjezba_3
             Console.WriteLine($"Povrsina Pravokutnika je: {povrsina}");
             
         }
+        
 
 
     }
